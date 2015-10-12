@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+
+@import url(_switchs.css);
+
+.todos .date {
+	font-size:13px;
+	text-transform:uppercase;
+	text-align:left;
+}
+.todos .date small{
+	text-align:left; 
+} 
+
+.todos .text {
+	font-size:14px;
+}
+
+.todos .boutons {
+	margin-top: 7px;
+}
+
+.todos .delete {
+	cursor: pointer;
+	font-size: 20px;
+	color: #cc0000;
+}

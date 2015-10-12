@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+.switch {
+border: 0;
+margin-top: 10px;
+left: 0;
+}
+
+/**
+-------------------------------------------
+TOGGLE SWITCH
+-------------------------------------------
+**/
+.onoffswitch {
+    position: relative;
+	width: 56px;
+    -webkit-user-select:none; 
+	-moz-user-select:none; 
+	-ms-user-select: none;
+}
+.onoffswitch-checkbox {display: none;}
+.onoffswitch-label {
+    display: block; 
+	overflow: hidden; 
+	cursor: pointer;
+}
+.onoffswitch-inner {
+    width: 200%; 
+	margin-left: -100%;
+    -moz-transition: margin 0.2s ease-in 0s; 
+	-webkit-transition: margin 0.2s ease-in 0s;
+    -o-transition: margin 0.2s ease-in 0s; 
+	transition: margin 0.2s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    float: left; 
+	width: 50%; 
+	height: 20px; 
+	padding: 0; 
+	line-height: 20px;
+    font-size: 13px; 
+	color: white; 
+	font-weight: bold;
+    -moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box; 
+	box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #8CC152; 
+	color: #FFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #E9573F; 
+	color: #FFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    width: 20px; 
+	height: 20px;
+    background: #CCC;
+    position: absolute; 
+	top: 0; 
+	bottom: 0; 
+	right: 38px;
+    -moz-transition: all 0.2s ease-in 0s; 
+	-webkit-transition: all 0.2s ease-in 0s;
+    -o-transition: all 0.2s ease-in 0s;
+	transition: all 0.2s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+.onoffswitch.blank 								{width: 40px;}
+.onoffswitch.blank .onoffswitch-inner:before 	{content: "\00a0";}
+.onoffswitch.blank .onoffswitch-inner:after 		{content: "\00a0";}
+.onoffswitch.blank .onoffswitch-switch 			{right: 20px;}
+
+.sidebar-left.light-color .onoffswitch-switch {
+    background-color: #E8E9EE; 
+}
